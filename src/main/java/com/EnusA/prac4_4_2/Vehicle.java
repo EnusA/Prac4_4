@@ -36,30 +36,4 @@ public class Vehicle {
     public String getColour(){return colour;}
 
 
-    //GM
-    List<Car> rentedCars = new ArrayList();
-    List<Bike> rentedBikes = new ArrayList();
-    Car car;
-    Bike bike;
-
-    //AE
-    public String rentBike()
-    {
-        bike = new Bike("Suzuki","Bandit","CA20156",2017,
-                "Black","No","Yes",true);
-        rentedBikes.add(bike);
-
-        return ("Bike rented: \nMake: " + bike.make + "\nRegistration number: " + bike.regNo);
-    }
-
-    //GM
-    public String rentCar()
-    {
-        car = new Car("Chevrolet", "Spark", "CA85246", 23084,
-                "Blue", 4, "Small", true);
-        rentedCars.add(car);
-
-        return ("Car rented: \nMake: " + car.make + "\nRegistration number: " + car.regNo);
-    }
-
 }
